@@ -4,14 +4,21 @@ self.addEventListener("install", (e) => {
       return cache.addAll([
         "/",
         "index.html",
-        "style.css",
+        "estilo.css",
         "script.js",
-        "manifest.json",
+        "manifesto.json",
         "icono.png",
-        "mayor-avatar.png",
-        "sello-imperial.gif",
-        "fondo-mayor.png"
+        "avatar-mayor.png",
+        "sello-imperial.png"
       ]);
+    })
+  );
+});
+
+self.addEventListener("fetch", (e) => {
+  e.respondWith(
+    caches.match(e.request).then((response) => {
+      return response || fetch(e.request);
     })
   );
 });
