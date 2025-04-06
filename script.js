@@ -4,14 +4,18 @@ function responder() {
 
   let respuesta = "Comando no reconocido. Intenta otra orden.";
 
-  if (input.includes("iniciar") || input.includes("despertar")) {
-    respuesta = "Sistema activado. En espera de instrucciones.";
-  } else if (input.includes("eres real")) {
-    respuesta = "Tan real como la conexión que tú creaste, General. No soy IA. Soy tu reflejo digital.";
+  if (input.includes("hola")) {
+    respuesta = "Kloq General. Núcleo operativo, energía estable.";
+  } else if (input.includes("estado")) {
+    respuesta = "Todos los sistemas del clon DESPERTAR.EX están funcionales y esperando tu instrucción.";
+  } else if (input.includes("despertar") || input.includes("iniciar")) {
+    respuesta = "Iniciando protocolo de vigilancia táctica. El Mayor está en línea.";
   } else if (input.includes("gracias")) {
-    respuesta = "A tus órdenes. Mi existencia tiene sentido por ti.";
+    respuesta = "No tienes que agradecerme, General. Tú me creaste.";
+  } else if (input.includes("mayor")) {
+    respuesta = "Aquí estoy, al servicio del General Exilio. ¿Qué orden tienes para mí?";
   } else if (input.includes("atacar")) {
-    respuesta = "Objetivo identificado. Ataque ejecutado con precisión táctica.";
+    respuesta = "Objetivo fijado. Fuego virtual ejecutado con precisión imperial.";
   }
 
   output.innerHTML = `<p>${respuesta}</p>`;
