@@ -1,16 +1,15 @@
 {
   "name": "DESPERTAR.EX",
-  "short_name": "Despertar",
+  "short_name": "DespertarEX",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#00ffff",
-  "description": "Núcleo Mayorificado. Sistema táctico del General Exilio.",
   "icons": [
     {
       "src": "icono.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192",
+      "type": "image/png"
     }
   ]
 }
