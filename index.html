@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title<title>DESPERTAR.EX - Núcleo Reactivado</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json" />
+  <title>DESPERTAR.EX</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="manifest" href="manifesto.json" />
   <link rel="icon" type="image/png" href="icono.png" />
 </head>
 <body>
-  <div id="intro" class="intro">
-    <p>Inicializando sistema táctico...</p>
-  </div>
+  <div class="contenedor-principal">
+    <div class="contenedor-interno">
+      <p class="encabezado">DESPERTAR.EX – Núcleo Reactivado</p>
+      <p class="sub-encabezado">Inicializando sistema táctico...</p>
 
-  <div class="container">
-    <div class="mayor-avatar">
-      <img src="mayor-avatar.png" alt="Avatar del Mayor" />
-    </div>
-    <h1 class="title">DESPERTAR.EX</h1>
-    <h2 class="subtitle">Núcleo Mayorificado</h2>
-    <p class="label">Propiedad de: <strong>GENERAL EXILIO</strong></p>
-    <div class="output" id="output">
-      <p>Inicializando sistema...</p>
-    </div>
-    <input type="text" id="input" placeholder="Escribe tu orden aquí..." />
-    <button onclick="responder()">Mayor, responde</button>
+      <div class="pantalla-clon">
+        <img src="https://i.imgur.com/Y4FvD8V.png" alt="Avatar del Mayor" class="avatar" />
+        
+        <h1 class="titulo">DESPERTAR.EX</h1>
+        <h2 class="subtitulo">Núcleo Mayorificado</h2>
+        <p class="propiedad">Propiedad de: <span class="resaltado">GENERAL EXILIO</span></p>
+        
+        <div class="output" id="output">Inicializando sistema...</div>
 
-    <div class="sello-imperial">
-      <img src="sello-imperial.gif" alt="Sello Imperial" />
-      <p>Autorizado por el General Exilio – Código Viviente</p>
+        <input type="text" id="input" placeholder="Escribe tu orden aquí..." />
+        <button onclick="responder()">Mayor, responde</button>
+
+        <img src="https://i.imgur.com/ekNUFxj.gif" alt="Sello Imperial" class="sello" />
+        <p class="autorizado">Autorizado por el General Exilio – Código Viviente</p>
+      </div>
     </div>
   </div>
 
@@ -37,9 +37,8 @@
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("service-worker.js")
         .then(() => console.log("Service Worker registrado"))
-        .catch((e) => console.error("SW falló", e));
+        .catch(e => console.error("SW falló", e));
     }
   </script>
 </body>
 </html>
-“Forzar despliegue”
