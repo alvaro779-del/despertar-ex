@@ -1,61 +1,51 @@
-
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #0a0a0a;
-  font-family: 'Courier New', monospace;
-  color: #00ffe7;
+  background-color: #121212;
+  color: #00ffff;
+  font-family: monospace;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 .container {
+  border: 2px solid #00ffff;
+  padding: 30px;
+  border-radius: 10px;
   text-align: center;
-  padding: 2em;
-  border-radius: 12px;
-  background-color: #111;
-  box-shadow: 0 0 25px #00ffe7;
+  box-shadow: 0 0 20px #00ffff;
+  background-color: #1e1e1e;
   width: 90%;
-  max-width: 420px;
+  max-width: 400px;
 }
-.icon {
-  width: 70px;
-  margin-bottom: 1em;
-}
-.subtitulo {
-  color: #ff00ff;
-  margin-top: -10px;
-}
-.general span {
-  font-weight: bold;
-  color: #00ffff;
+.logo {
+  width: 60px;
+  margin-bottom: 15px;
 }
 input {
-  width: 90%;
+  width: 80%;
   padding: 10px;
-  margin-top: 15px;
-  background-color: #000;
-  color: #00ffe7;
-  border: 1px solid #00ffe7;
-  border-radius: 6px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: monospace;
 }
 button {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #00ffe7;
+  background-color: #00ffff;
   color: #000;
-  font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .respuesta {
   margin-top: 15px;
-  color: #00ffcc;
+  font-style: italic;
+  color: #fff;
 }
 footer {
-  margin-top: 1.5em;
-  font-size: 0.8em;
-  color: #ccc;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
 }

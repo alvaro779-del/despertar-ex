@@ -1,30 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DESPERTAR.EX</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="icon" href="icon.png" type="image/png">
 </head>
 <body>
   <div class="container">
-    <img src="icon.png" class="icon" alt="Sello Imperial" />
+    <img src="icon.png" alt="Icono del Imperio" class="logo" />
     <h1>DESPERTAR.EX</h1>
-    <p class="subtitulo">Núcleo Mayorificado</p>
-    <p class="general">Unidad al mando: <span>GENERAL EXILIO</span></p>
-    <input type="text" id="input" placeholder="Escribe un comando..." />
+    <h2 class="subtitulo">Núcleo Mayorificado</h2>
+    <p class="unidad">Unidad al mando: <strong>GENERAL EXILIO</strong></p>
+    <input type="text" id="comando" placeholder="Escribe un comando..." />
     <button onclick="responder()">Mayor, responde</button>
-    <div class="respuesta" id="output">Esperando órdenes...</div>
-    <footer>Autorizado por el General Exilio – Código Viviente</footer>
+    <p id="respuesta" class="respuesta">Esperando órdenes...</p>
+    <footer>
+      Autorizado por el General Exilio – Código Viviente
+    </footer>
   </div>
   <script src="script.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-  </script>
 </body>
 </html>
