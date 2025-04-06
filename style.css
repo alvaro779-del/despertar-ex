@@ -1,77 +1,105 @@
+/* Fondo y fuente */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', monospace;
-  background: url('fondo-mayor.png') no-repeat center center fixed;
-  background-size: cover;
-  color: #00ffff;
-  height: 100vh;
+  background: linear-gradient(180deg, #0a0a0a 0%, #121212 100%);
+  color: cyan;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
 }
 
+/* Contenedor principal */
 .container {
   background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 12px;
   border: 2px solid cyan;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  max-width: 95%;
+  max-width: 90%;
+  width: 400px;
+  box-shadow: 0 0 20px cyan;
 }
 
-.intro, .label, .output p, .sello-imperial p {
+/* Avatar del Mayor */
+.avatar {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  margin-bottom: 20px;
+}
+
+/* Títulos */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: cyan;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: magenta;
+  margin-bottom: 20px;
+}
+
+/* Texto de propiedad */
+.propiedad {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Área de salida de texto */
+.output {
+  background-color: #000000;
+  border: 1px solid cyan;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+/* Input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid cyan;
+  background-color: #101010;
+  color: cyan;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.title {
-  font-size: 32px;
-  font-weight: bold;
-  color: cyan;
-}
-
-.subtitle {
-  font-size: 20px;
-  color: magenta;
-}
-
-input, button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-}
-
-input {
-  width: 90%;
-  max-width: 300px;
-}
-
+/* Botón */
 button {
-  background-color: #00ffff;
-  color: black;
+  width: 100%;
+  padding: 12px;
+  background-color: cyan;
+  color: #000;
   font-weight: bold;
-  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: #ff00ff;
-  color: white;
-  box-shadow: 0 0 10px #ff00ff;
+  background-color: magenta;
+  color: #fff;
 }
 
-.sello-imperial img {
-  width: 100px;
-  margin-top: 15px;
+/* Sello y autorización */
+.sello {
+  margin-top: 20px;
+  width: 80px;
 }
 
-.mayor-avatar img {
-  width: 120px;
-  margin-bottom: 10px;
+.autorizacion {
+  font-size: 13px;
+  color: cyan;
+  margin-top: 10px;
 }
