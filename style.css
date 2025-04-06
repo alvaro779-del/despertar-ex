@@ -1,105 +1,106 @@
-/* Fondo y fuente */
 body {
   margin: 0;
-  padding: 0;
-  background: linear-gradient(180deg, #0a0a0a 0%, #121212 100%);
-  color: cyan;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', monospace;
+  background: radial-gradient(circle at center, #0a0a0a, #000000);
+  color: #00ffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+.container {
   text-align: center;
 }
 
-/* Contenedor principal */
-.container {
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 30px;
-  border-radius: 12px;
-  border: 2px solid cyan;
-  max-width: 90%;
-  width: 400px;
-  box-shadow: 0 0 20px cyan;
+.system-title {
+  font-size: 1.2rem;
+  color: #66ffcc;
+  margin-bottom: 0;
 }
 
-/* Avatar del Mayor */
+.system-status {
+  font-size: 1rem;
+  color: #33cccc;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.terminal {
+  background-color: #111;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  padding: 25px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px #00ffff;
+}
+
 .avatar {
-  width: 120px;
-  height: auto;
+  width: 100px;
   border-radius: 50%;
-  border: 3px solid cyan;
-  margin-bottom: 20px;
-}
-
-/* Títulos */
-.title {
-  font-size: 28px;
-  font-weight: bold;
-  color: cyan;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 18px;
-  color: magenta;
-  margin-bottom: 20px;
-}
-
-/* Texto de propiedad */
-.propiedad {
-  font-size: 14px;
-  color: #ffffff;
   margin-bottom: 15px;
 }
 
-/* Área de salida de texto */
-.output {
-  background-color: #000000;
-  border: 1px solid cyan;
-  border-radius: 8px;
-  padding: 15px;
-  margin: 15px 0;
+.title {
+  color: #00ffff;
+  font-size: 1.8rem;
+  margin: 10px 0;
 }
 
-/* Input */
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid cyan;
-  background-color: #101010;
-  color: cyan;
-  font-size: 16px;
+.subtitle {
+  color: #ff33cc;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-/* Botón */
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: cyan;
-  color: #000;
+.owner {
+  color: #ccc;
+}
+
+.highlight {
+  color: #00ffff;
   font-weight: bold;
+}
+
+.output {
+  margin: 15px auto;
+  padding: 10px;
+  background: #000;
+  border: 1px solid #00ffff;
+  color: #00ffcc;
+  font-size: 0.95rem;
+  width: 90%;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 75%;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-button:hover {
-  background-color: magenta;
+  background: #222;
   color: #fff;
+  border: 1px solid #00ffff;
+  margin-bottom: 10px;
 }
 
-/* Sello y autorización */
+button {
+  background: #00ffff;
+  border: none;
+  color: #000;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
 .sello {
-  margin-top: 20px;
-  width: 80px;
+  width: 60px;
+  margin-top: 15px;
 }
 
-.autorizacion {
-  font-size: 13px;
-  color: cyan;
+.footer {
+  color: #00ffff;
   margin-top: 10px;
+  font-size: 0.9rem;
 }
+
