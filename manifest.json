@@ -1,10 +1,12 @@
+
 {
   "name": "DESPERTAR.EX",
   "short_name": "Despertar",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#000000",
-  "description": "Núcleo Mayorificado",
+  "theme_color": "#00ffff",
+  "description": "Clon Mayorificado creado por el General Exilio.",
   "icons": [
     {
       "src": "icon.png",
