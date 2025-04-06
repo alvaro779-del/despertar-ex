@@ -7,7 +7,10 @@ self.addEventListener("install", (e) => {
         "style.css",
         "script.js",
         "manifest.json",
-        "icon.png"
+        "icono.png",
+        "mayor-avatar.png",
+        "sello-imperial.gif",
+        "fondo-mayor.png"
       ]);
     })
   );

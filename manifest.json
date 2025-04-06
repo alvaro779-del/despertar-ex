@@ -1,15 +1,16 @@
 {
   "name": "DESPERTAR.EX",
-  "short_name": "Despertar",
+  "short_name": "DESPERTAR",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#000000",
-  "description": "Módulo táctico Mayorificado del Imperio Exilio",
+  "description": "Núcleo Mayorificado. Código Viviente.",
   "icons": [
     {
-      "src": "icon.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "icono.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
-  ]
+  ],
+  "theme_color": "#00ffff"
 }

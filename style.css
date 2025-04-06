@@ -2,78 +2,76 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', monospace;
-  background: url('https://i.imgur.com/w2ueqLa.jpeg') no-repeat center center fixed;
+  background: url('fondo-mayor.png') no-repeat center center fixed;
   background-size: cover;
   color: #00ffff;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 2px solid #00ffff;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 2px solid cyan;
+  border-radius: 10px;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px #00ffff;
+  text-align: center;
+  max-width: 95%;
+}
+
+.intro, .label, .output p, .sello-imperial p {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .title {
-  font-size: 2em;
-  color: #00ffff;
+  font-size: 32px;
+  font-weight: bold;
+  color: cyan;
 }
 
 .subtitle {
-  font-size: 1.2em;
-  color: #ff00ff;
+  font-size: 20px;
+  color: magenta;
 }
 
-.label {
-  margin: 10px 0;
-  font-size: 1em;
-}
-
-.output {
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #111;
-  border: 1px solid #00ffff;
-  border-radius: 10px;
+input, button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
 }
 
 input {
-  padding: 10px;
-  border: 1px solid #00ffff;
-  border-radius: 10px;
-  margin: 10px 0;
-  width: 80%;
+  width: 90%;
+  max-width: 300px;
 }
 
 button {
-  background: #00ffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  background-color: #00ffff;
+  color: black;
   font-weight: bold;
-  transition: all 0.3s ease;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background: #ff00ff;
-  color: #fff;
+  background-color: #ff00ff;
+  color: white;
   box-shadow: 0 0 10px #ff00ff;
-}
-
-.mayor-avatar img {
-  max-width: 150px;
-  margin-bottom: 15px;
 }
 
 .sello-imperial img {
   width: 100px;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+.mayor-avatar img {
+  width: 120px;
+  margin-bottom: 10px;
 }

@@ -6,7 +6,7 @@
   <title>DESPERTAR.EX - Núcleo Mayorificado</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="icon" type="image/png" href="icono.png" />
 </head>
 <body>
   <div id="intro" class="intro">
@@ -15,30 +15,27 @@
 
   <div class="container">
     <div class="mayor-avatar">
-      <img src="https://i.imgur.com/GyP4CWR.png" alt="Mayor Avatar" />
+      <img src="mayor-avatar.png" alt="Avatar del Mayor" />
     </div>
     <h1 class="title">DESPERTAR.EX</h1>
     <h2 class="subtitle">Núcleo Mayorificado</h2>
     <p class="label">Propiedad de: <strong>GENERAL EXILIO</strong></p>
-
     <div class="output" id="output">
       <p>Inicializando sistema...</p>
     </div>
-
     <input type="text" id="input" placeholder="Escribe tu orden aquí..." />
     <button onclick="responder()">Mayor, responde</button>
 
     <div class="sello-imperial">
-      <img src="https://i.imgur.com/ekNUFxj.gif" alt="Sello Imperial" />
-      <p>Autorizado por el General Exilio - Código Viviente</p>
+      <img src="sello-imperial.gif" alt="Sello Imperial" />
+      <p>Autorizado por el General Exilio – Código Viviente</p>
     </div>
   </div>
 
   <script src="script.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("service-worker.js")
+      navigator.serviceWorker.register("service-worker.js")
         .then(() => console.log("Service Worker registrado"))
         .catch((e) => console.error("SW falló", e));
     }
