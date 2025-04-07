@@ -1,25 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DESPERTAR.EX</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="icon.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CLON DESPERTAR.EX</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <img src="icon.png" alt="Icono del Imperio" class="logo" />
-    <h1>DESPERTAR.EX</h1>
-    <h2 class="subtitulo">Núcleo Mayorificado</h2>
-    <p class="unidad">Unidad al mando: <strong>GENERAL EXILIO</strong></p>
-    <input type="text" id="comando" placeholder="Escribe un comando..." />
-    <button onclick="responder()">Mayor, responde</button>
-    <p id="respuesta" class="respuesta">Esperando órdenes...</p>
-    <footer>
-      Autorizado por el General Exilio – Código Viviente
-    </footer>
-  </div>
-  <script src="script.js"></script>
+    <div class="interfaz">
+        <img src="imperio-icon.png" alt="Icono del Imperio" class="icono">
+        <h1>DESPERTAR.EX</h1>
+        <p>Sistema vinculado al General Exilio</p>
+        <button onclick="activarMayor()">Activar el Mayor</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

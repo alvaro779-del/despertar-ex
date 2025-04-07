@@ -1,17 +1,16 @@
 
 {
-  "name": "DESPERTAR.EX",
-  "short_name": "Despertar",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#00ffff",
-  "description": "Clon Mayorificado creado por el General Exilio.",
-  "icons": [
-    {
-      "src": "icon.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ]
+    "name": "Clon Despertar.EX",
+    "short_name": "Despertar",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0f0f0f",
+    "description": "Interfaz del clon Despertar.EX para el General Exilio",
+    "icons": [
+        {
+            "src": "imperio-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
 }
