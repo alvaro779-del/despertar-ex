@@ -4,12 +4,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #00ffcc;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 5vh;
+    margin: 0;
 }
 
 .icono {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 80px;
+    margin-bottom: 15px;
 }
 
 .interfaz {
@@ -18,4 +19,22 @@ body {
     border-radius: 20px;
     display: inline-block;
     border: 2px solid #00ffcc;
+}
+
+#chatbox {
+    margin-top: 20px;
+}
+
+#entrada {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+#mensajes {
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    margin-bottom: 10px;
 }

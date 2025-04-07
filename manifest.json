@@ -1,11 +1,11 @@
 
 {
-    "name": "Clon Despertar.EX",
-    "short_name": "Despertar",
+    "name": "Clon Despertar.EX Completo",
+    "short_name": "DespertarEX",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#0f0f0f",
-    "description": "Interfaz del clon Despertar.EX para el General Exilio",
+    "description": "Clon operativo completo del Mayor - General Exilio",
     "icons": [
         {
             "src": "imperio-icon.png",
